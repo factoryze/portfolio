@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Nunito&family=Radley&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,16 +15,18 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              logolightblue: "#5E8DD2",
             },
             fontFamily: {
               dmsans: ['"DM Sans"'],
+              radley: ["Radley"],
+              nunito: ["Nunito"],
             },
           },
         },
       };
     </script>
-        <style>
+    <style>
       .shine {
         position: absolute;
         top: 0;
@@ -46,15 +48,16 @@
           opacity: 1;
         }
       }
-          @keyframes jump {
-            0%, 100% {
-              transform: translateY(0);
-            }
-            50% {
-              transform: translateY(-20px);
-            }
-          }
-        </style>
+      @keyframes jump {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+    </style>
   </head>
   <body>
     <section class="hero h-screen w-screen md:p-20 p-4">
@@ -62,24 +65,33 @@
         <div
           class="w-full md:h-[5vh] h-[10vh] md:flex justify-between tracking-wide text-gray-600"
         >
-          <span class="">By the graduates of IIT, University of Dhaka</span><br/>
+          <span class="">By the graduates of IIT, University of Dhaka</span
+          ><br />
           <span class="">Email us: <b>factoryze.official@gmail.com</b></span>
         </div>
         <div class="flex-grow border border-gray-600 md:p-12 p-4">
-          <div class="asol h-full w-full flex md:flex-row flex-col justify-between md:items-center">
+          <div
+            class="asol h-full w-full flex md:flex-row flex-col justify-between md:items-center"
+          >
             <div class="h-full md:w-1/2 flex flex-col justify-between">
               <div class="factoryze_logo md:hidden w-1/2 md:w-1/3 max-h-screen">
                 <img src="factoryze.jpg" class="w-full" />
                 <div class="shine"></div>
               </div>
               <div class="flex flex-col gap-8">
-                <span class="md:text-9xl text-7xl tracking-wide" style="animation: jump 2s infinite;"
-                  >Factor<span class="text-blue-500">y</span>ze</span
+                <span
+                  class="md:text-9xl text-7xl tracking-wide"
+                  style="animation: jump 2s infinite"
+                  >Factor<span class="text-logolightblue">y</span>ze</span
                 >
                 <span class="md:text-2xl text-lg"
                   >Tech Co-Founder of your brilliant startup idea!</span
                 >
-                <span class="italic text-gray-600">Details coming soon...<br/>For any queries, reach us on 01784241318<br/>or mail us on factoryze.official@gmail.com</span>
+                <span class="italic text-gray-600"
+                  >Details coming soon...<br />For any queries, reach us on
+                  01784241318<br />or mail us on
+                  factoryze.official@gmail.com</span
+                >
               </div>
               <div class="flex flex-col gap-1 text-gray-900 font-bold">
                 <span class="uppercase">Find us on</span>
@@ -98,6 +110,98 @@
               <div class="shine"></div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="services h-screen w-screen md:p-20 p-4 flex justify-around font-radley align-center"
+    >
+      <div class="left flex flex-col justify-around">
+        <div
+          class="title font-nunito border border-blue-500 rounded-tr-[4rem] rounded-bl-[4rem] text-9xl px-16 py-4 text-white bg-logolightblue"
+        >
+          services
+        </div>
+        <div class="text-3xl text-center italic py-16">
+          Top-Notch services,<br />Elegant touches
+        </div>
+      </div>
+      <div class="right text-center flex flex-col justify-around">
+        <div class="service">
+          <div class="servicetitle text-3xl italic">
+            Website, <span class="text-logolightblue">Static/Dynamic</span>
+          </div>
+          <div class="servicedesc">
+            As mobile apps are the most handy softwares,<br />Factoryze provides
+            the needed care!
+          </div>
+        </div>
+        <div class="service">
+          <div class="servicetitle text-3xl italic">
+            Mobile App, <span class="text-logolightblue">Android/IOS</span>
+          </div>
+          <div class="servicedesc">
+            As mobile apps are the most handy softwares,<br />Factoryze provides
+            the needed care!
+          </div>
+        </div>
+        <div class="service">
+          <div class="servicetitle text-3xl italic">
+            Specialized <span class="text-logolightblue">AI/ML</span>
+          </div>
+          <div class="servicedesc">
+            As mobile apps are the most handy softwares,<br />Factoryze provides
+            the needed care!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="services h-screen w-screen md:p-20 p-4 flex flex-row-reverse font-radley justify-around"
+    >
+      <div class="left w-1/3">
+        <div class="w-full h-full">
+          <img src="frame.png" width="auto"/>
+        </div>
+      </div>
+      <div class="joinus text-center">
+        <div class="jointitle text-5xl italic">
+          Join Us?
+        </div>
+        <div class="joindesc text-3xl">
+          <br/>
+          If these three 'D's define you:<br />
+          <span class="text-blue-600">Dedicated</span><br/>
+        <span class="text-blue-600">Dreamer</span><br/>
+        <span class="text-blue-600">Determined</span><br/>
+          SCAN THE QR!
+        </div>
+      </div>
+    </section>
+    <hr/>
+    <section class="footer italic w-screen flex justify-around font-radley bg-gray-200 py-16">
+      <div class="w-1/3">
+        <img src="factoryze.jpg" width="100"/>
+      </div>
+      <div class="flex flex-col gap-16">
+        <span class="text-2xl">For any queries, Feel free to get in touch</span>
+        <div class="flex justify-between">
+          <div>
+          <div class="flex gap-2">
+            <div class="logo h-8 w-8">
+              <img src="logo-facebook.svg" />
+            </div>
+            <div class="logo h-8 w-8">
+              <img src="logo-linkedin.svg" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>factoryze.official@gmail.com</div>
+          <div>01784241318</div>
+        </div>
         </div>
       </div>
     </section>
